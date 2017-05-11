@@ -6,17 +6,17 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Carlos Vázquez Losada - Un blog sobre Software">
-    <meta name="keywords" content="data, science, software, carlos, vázquez, cvazquezlos, c.vazquezlos">
-    <meta name="author" content="Carlos Vázquez Losada">
+    <meta name="description" content="cvCard - Responsive HTML5 vCard Template">
+    <meta name="keywords" content="vcard, html5, portfolio">
+    <meta name="author" content="Pixelwars">
 
-    <title>Carlos Vázquez Losada - Un blog sobre Software</title>
+    <title>cvCard</title>
 
     <!-- FAV and TOUCH ICONS -->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon" href="images/ico/apple-touch-icon.png" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
 
     <!-- FONTS -->
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
@@ -39,11 +39,17 @@
     <link rel="stylesheet" type="text/css" href="css/tooltipster.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+
     <!--[if lte IE 9]>
             <script src="js/html5shiv.js"></script>
             <script src="js/respond.min.js"></script>
             <script src="js/selectivizr-min.js"></script>
         <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="style-switcher/style.css">
+    <link rel="stylesheet" class="base-skin" type="text/css" href="#">
+
+
     <!-- InstanceBeginEditable name="head" -->
     <!-- InstanceEndEditable -->
 
@@ -59,11 +65,11 @@
             <p>freelance graphic designer</p>
             <ul class="vs-nav">
                 <!-- InstanceBeginEditable name="Menu-Content" -->
-                <li><a href="#/about">sobre mí</a></li>
+                <li><a href="#/about">about me</a></li>
                 <li><a href="#/portfolio">portfolio</a></li>
-                <li><a href="#/contact">contacto</a></li>
+                <li><a href="#/contact">contact</a></li>
                 <li><a href="#/blog">blog</a></li>
-                <li><a href="#/resume">resumen</a></li>
+                <li><a href="#/resume">resume</a></li>
             </ul>
             <div class="header-search">
                 <form role="search" method="get" id="search-form" action="#">
@@ -87,12 +93,12 @@
                                 <h2>
                                     Hello. I am
                                     <span class="rotate-words">
-                                        <span>an illustrator.</span>
-                                        <span>a writer.</span>
-                                        <span>a freelancer.</span>
-                                        <span>an inventor.</span>
-                                        <span>a wordpress fan.</span>
-                                        <span>a coffee lover.</span>
+                                            <span>an illustrator.</span>
+                                    <span>a writer.</span>
+                                    <span>a freelancer.</span>
+                                    <span>an inventor.</span>
+                                    <span>a wordpress fan.</span>
+                                    <span>a coffee lover.</span>
                                     </span>
                                     <br> I live in a small town somewhere in the world.
                                     <br> I am passionated about <strong>minimalistic</strong> and flat design.
@@ -103,45 +109,54 @@
                         <!-- column 8/12 -->
                         <!-- column 4/12 -->
                         <div class="col-md-4">
-                            <h2 class="section-title"><span><i class="icon-twitter"></i>ÚLTIMOS TUITS</span></h2>
-                            <div id="latest-tweets" class="widget-twitter" data-twitter-name="cvazquezlos" data-tweet-count="1" data-include-retweets="false"></div>
+                            <h2 class="section-title"><span><i class="icon-twitter"></i>LATEST TWEETS</span></h2>
+                            <div id="latest-tweets" class="widget-twitter" data-twitter-name="pixelwarsdesign" data-tweet-count="1" data-include-retweets="false"></div>
                         </div>
                         <!-- column 4/12 -->
                     </div>
                     <!-- row -->
-                    <h2 class="section-title"><span><i class="fa fa-magic"></i>MI CAMPO DE ESTUDIO</span></h2>
+                    <h2 class="section-title"><span><i class="fa fa-magic"></i>SERVICES</span></h2>
                     <!-- SERVICES -->
                     <div class="row">
-                        <div class="col-sm-6 col-md-4">
+                        <div class="col-sm-6 col-md-3">
                             <!-- service -->
                             <div class="service color1">
-                                <i class="fa fa-database"></i>
-                                <h4>Data Science</h4>
-                                <p>Orientado al análisis de datos y predicciones.</p>
+                                <i class="fa fa-html5"></i>
+                                <h4>Web Design</h4>
+                                <p>I design super cool websites. It is a long established fact that a reader will be distracted by the readable content. </p>
                             </div>
                             <!-- service -->
                         </div>
-                        <div class="col-sm-6 col-md-4">
+                        <div class="col-sm-6 col-md-3">
                             <!-- service -->
                             <div class="service color2">
-                                <i class="fa fa-html5"></i>
-                                <h4>Desarrollo web</h4>
-                                <p>Desarrollo full stack con las últimas tecnologías frontend y backend.</p>
+                                <i class="fa fa-font"></i>
+                                <h4>Type Design</h4>
+                                <p>I can design beautiful type faces for both digital and print media. It is a long established fact that a reader will be distracted. </p>
                             </div>
                             <!-- service -->
                         </div>
-                        <div class="col-sm-6 col-md-4">
+                        <div class="col-sm-6 col-md-3">
+                            <!-- service -->
+                            <div class="service color3">
+                                <i class="icon-smashmag"></i>
+                                <h4>Blog Writer</h4>
+                                <p>I write about web design. It is a long established fact that a reader will be distracted by the readable content. </p>
+                            </div>
+                            <!-- service -->
+                        </div>
+                        <div class="col-sm-6 col-md-3">
                             <!-- service -->
                             <div class="service color4">
-                                <i class="fa fa-code"></i>
-                                <h4>Algoritmos</h4>
-                                <p>Técnicas algorítmicas en Java actuales y no tan novedosas.</p>
+                                <i class="fa fa-rocket"></i>
+                                <h4>Project Management</h4>
+                                <p>I have strong project management skills. It is a long established fact that a reader will be distracted by the readable content. </p>
                             </div>
                             <!-- service -->
                         </div>
                     </div>
                     <!-- SERVICES -->
-                    <h2 class="section-title"><span><i class="icon-layers-alt"></i>¿CÓMO ME GUSTA TRABAJAR?</span></h2>
+                    <h2 class="section-title"><span><i class="icon-layers-alt"></i>WORK PROCESS</span></h2>
                     <!-- PROCESS -->
                     <div class="row">
                         <div class="col-xs-6 col-sm-4 col-md-2">
@@ -159,7 +174,7 @@
                             <div class="process">
                                 <div class="process-box">
                                     <i class="fa fa-puzzle-piece"></i>
-                                    <h4>CONCEPTO</h4>
+                                    <h4>CONCEPT</h4>
                                 </div>
                             </div>
                             <!-- process -->
@@ -167,9 +182,10 @@
                         <div class="col-xs-6 col-sm-4 col-md-2">
                             <!-- process -->
                             <div class="process">
+
                                 <div class="process-box">
                                     <i class="icon-brush"></i>
-                                    <h4>DISEÑO</h4>
+                                    <h4>DESIGN</h4>
                                 </div>
                             </div>
                             <!-- process -->
@@ -177,9 +193,10 @@
                         <div class="col-xs-6 col-sm-4 col-md-2">
                             <!-- process -->
                             <div class="process">
+
                                 <div class="process-box">
                                     <i class="fa fa-cube"></i>
-                                    <h4>DESARROLLO</h4>
+                                    <h4>DEVELOP</h4>
                                 </div>
                             </div>
                             <!-- process -->
@@ -187,9 +204,10 @@
                         <div class="col-xs-6 col-sm-4 col-md-2">
                             <!-- process -->
                             <div class="process">
+
                                 <div class="process-box">
                                     <i class="fa fa-bug"></i>
-                                    <h4>TESTING</h4>
+                                    <h4>TEST</h4>
                                 </div>
                             </div>
                             <!-- process -->
@@ -197,9 +215,10 @@
                         <div class="col-xs-6 col-sm-4 col-md-2">
                             <!-- process -->
                             <div class="process">
+
                                 <div class="process-box">
                                     <i class="fa fa-rocket"></i>
-                                    <h4>PRODUCCIÓN</h4>
+                                    <h4>LAUNCH</h4>
                                 </div>
                             </div>
                             <!-- process -->
@@ -495,39 +514,40 @@
                     <div class="row">
                         <!-- column 6/12 -->
                         <div class="col-md-6">
-                            <h2 class="section-title"><span><i class="icon-address-book"></i>MANTENGÁMONOS EN CONTACTO</span></h2>
+                            <h2 class="section-title"><span><i class="icon-address-book"></i>LET'S GET IN TOUCH</span></h2>
                             <!-- LETTER -->
                             <div class="letter">
+                                <h4 class="letter-title">Johhny Alexander Doe</h4>
                                 <div class="stamp">
                                     <img src="images/site/stamp-image.png" alt="stamp">
                                 </div>
                                 <div class="letter-info">
-                                    <p><i class="icon-at"></i>c.vazquezlosada@gmail.com</p>
-                                    <p><i class="icon-phone"></i>656 565 066</p>
-                                    <p><i class="icon-location"></i>Arroyomolinos, Madrid</p>
+                                    <p><i class="icon-at"></i>johhny@gmail.com</p>
+                                    <p><i class="icon-phone"></i>123 456 78 99</p>
+                                    <p><i class="icon-location"></i>121 King Street, Melbourne Victoria 3000 Australia</p>
                                 </div>
                             </div>
                             <!-- LETTER -->
-                            <h2 class="section-title"><span><i class="icon-paper-plane"></i>CONTACTA CONMIGO</span></h2>
+                            <h2 class="section-title"><span><i class="icon-paper-plane"></i>DROP ME A LINE</span></h2>
                             <!-- .contact-form -->
                             <div class="contact-form">
                                 <form id="contact-form" action="send-mail.php" method="post">
                                     <!-- enter mail subject here -->
                                     <input type="hidden" name="subject" id="subject" value="You have a new message from cvCard!">
                                     <p>
-                                        <label for="name">NOMBRE</label>
+                                        <label for="name">NAME</label>
                                         <input type="text" name="name" id="name" class="required">
                                     </p>
                                     <p>
-                                        <label for="email">CORREO ELECTRÓNICO</label>
+                                        <label for="email">EMAIL</label>
                                         <input type="text" name="email" id="email" class="required email">
                                     </p>
                                     <p>
-                                        <label for="message">MENSAJE</label>
+                                        <label for="message">MESSAGE</label>
                                         <textarea name="message" id="message" class="required"></textarea>
                                     </p>
                                     <p>
-                                        <input type="submit" class="submit button primary" value="ENVIAR">
+                                        <input type="submit" class="submit button primary" value="SEND">
                                     </p>
                                 </form>
                             </div>
@@ -540,26 +560,96 @@
                             <!-- SOCIAL -->
                             <ul class="social">
                                 <li>
-                                    <a class="facebook" href="https://www.facebook.com/profile.php?id=100005939719228" target="_blank"></a>
+                                    <a class="facebook" href="#"></a>
                                 </li>
                                 <li>
-                                    <a class="twitter" href="https://twitter.com/cvazquezlos" target="_blank"></a>
+                                    <a class="twitter" href="#"></a>
                                 </li>
                                 <li>
-                                    <a class="linkedin" href="https://www.linkedin.com/in/carlos-vazquez-losada/" target="_blank"></a>
+                                    <a class="linkedin" href="#"></a>
                                 </li>
                                 <li>
-                                    <a class="github" href="https://github.com/cvazquezlos" target="_blank"></a>
+                                    <a class="google-plus" href="#"></a>
                                 </li>
                                 <li>
-                                    <a class="stack-overflow" href="http://stackoverflow.com/users/6877607/carlos-v%C3%A1zquez-losada" target="_blank"></a>
+                                    <a class="pinterest" href="#"></a>
                                 </li>
+                                <li>
+                                    <a class="github" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="behance" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="dribbble" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="instagram" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="lastfm" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="rss" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="vimeo" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="forrst" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="skype" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="picasa" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="youtube" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="flickr" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="tumblr" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="blogger" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="delicious" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="digg" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="friendfeed" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="wordpress" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="stack-overflow" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="foursquare" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="xing" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="weibo" href="#"></a>
+                                </li>
+                                <!--<li><a class="deviantart" href="#"></a></li>
+                                    <li><a class="soundcloud" href="#"></a></li>
+                                    <li><a class="fivehundredpx" href="#"></a></li>
+                                    <li><a class="slideshare" href="#"></a></li>-->
                             </ul>
                             <!-- SOCIAL -->
-                            <h2 class="section-title"><span><i class="icon-location"></i>¿DÓNDE ME ENCUENTRO?</span></h2>
+                            <h2 class="section-title"><span><i class="icon-location"></i>LOCATION</span></h2>
                             <!-- GOOGLE MAP -->
                             <div class="map">
-                                <div data-latitude="40.278096" data-longitude="-3.921429" data-zoom="10" id="map-canvas" class="map-canvas"></div>
+                                <div data-latitude="-25.363882" data-longitude="131.044922" data-zoom="4" id="map-canvas" class="map-canvas"></div>
                             </div>
                             <!-- GOOGLE MAP -->
                         </div>
@@ -869,30 +959,45 @@
     <div class="p-overlay"></div>
     <!-- ALERT : used for contact form mail delivery alert -->
     <div class="site-alert animated"></div>
-<!-- InstanceEndEditable -->
-<!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js" integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=" crossorigin="anonymous"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.5/jquery.address.min.js"></script>
+    <!-- InstanceEndEditable -->
+    <!-- SCRIPTS -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.address-1.5.min.js"></script>
     <script src="js/triple.layout.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
     <script src="js/nprogress/nprogress.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/0.6.11/fastclick.min.js"></script>
+    <script src="js/fastclick.js"></script>
     <script src="js/jquery.imagesloaded.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/jquery.flexslider-min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.uniform.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/2.2.3/js/jquery.tooltipster.min.js"></script>
+    <script src="js/jquery.fancybox-1.3.4.pack.js"></script>
+    <script src="js/jquery.tooltipster.min.js"></script>
     <script src="js/google-code-prettify/prettify.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-fetcher/16.0.2/js/twitterFetcher_min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.13.1/js/mediaelement-and-player.min.js"></script>
+    <script src="js/twitterFetcher_v10_min.js"></script>
+    <script src="js/mediaelement/mediaelement-and-player.min.js"></script>
     <script src="js/send-mail.js"></script>
     <script src="js/classie.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
     <script src="js/main.js"></script>
+    <!--************************** STYLE SWITCHER -->
+    <script src="style-switcher/jquery.cookie.js"></script>
+    <script src="style-switcher/style.switcher.js"></script>
+    <div id="skin-select">
+        <a id="toggle"></a>
+        <div class="skin-part" data-linkClass="base-skin">
+            <h3>BASE STYLE</h3>
+            <ul>
+                <li><a href="#" class="active">Default</a></li>
+                <li><a href="css/skins/flat.css">Flat</a></li>
+                <li><a href="css/skins/overlay.css">Overlay</a></li>
+                <li><a href="css/skins/overlay-bold.css">Overlay Bold</a></li>
+            </ul>
+        </div>
+    </div>
     <!--************************** STYLE SWITCHER -->
 </body>
 <!-- InstanceEnd -->

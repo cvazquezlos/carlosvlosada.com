@@ -957,7 +957,7 @@ h2 i[class^="icon-"], h2 i[class*=" icon-"], h2 i.fa {
 
 /* SOCIAL LINKS */
 .social {
- 	padding: 0; margin: 2em 0 4em 0; list-style: none; text-align: center;
+ 	padding: 0; margin: 2em 0 4em 0; list-style: none;
 	}
 	.social li {
  		display: inline-block; padding: 0; margin-bottom: -3px;
@@ -1163,7 +1163,7 @@ h2 i[class^="icon-"], h2 i[class*=" icon-"], h2 i.fa {
  		width: 100%; border-width: 0; outline: none; height: 350px; border-radius: 4px;
 		}
 .map-canvas {
-	height: 360px; margin: 0px; padding: 0px; line-height: 1.6;
+	height: 342px; margin: 0px; padding: 0px; line-height: 1.6;
 	}
 	.map-canvas img { 
 		max-width: none; 
