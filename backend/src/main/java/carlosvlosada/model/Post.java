@@ -22,7 +22,7 @@ public class Post {
 	private String title;
 	private String littleImage;
 	private Date creationDate;
-	private String text;
+	private List<Object> content;
 
 	@ManyToOne
 	private User writer;
@@ -30,11 +30,11 @@ public class Post {
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "post")
 	private List<Comment> comments;
 
-	public Post(String title, String littleImage, Date creationDate, String text, User writer) {
+	public Post(String title, String littleImage, Date creationDate, List<Object> content, User writer) {
 		this.title = title;
 		this.littleImage = littleImage;
 		this.creationDate = creationDate;
-		this.text = text;
+		this.content = new ArrayList<Object>(content);
 		this.writer = writer;
 		this.comments = new ArrayList<Comment>();
 	}
@@ -71,12 +71,12 @@ public class Post {
 		this.creationDate = creationDate;
 	}
 
-	public String getText() {
-		return text;
+	public List<Object> getContent() {
+		return content;
 	}
 
-	public void setText(String text) {
-		this.text = text;
+	public void setText(List<Object> content) {
+		this.content = content;
 	}
 
 	public User getWriter() {

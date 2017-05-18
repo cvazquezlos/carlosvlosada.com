@@ -27,7 +27,7 @@ public class User {
 
 	private Boolean isAdmin;
 
-	@OneToMany(cascade = CascadeType.ALL, mappedBy="writer")
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "writer")
 	private List<Post> posts;
 
 	public User(String nickName, String passwordHash, String biography, String email, Date birthDate) {
