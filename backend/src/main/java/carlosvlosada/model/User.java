@@ -1,11 +1,15 @@
 package carlosvlosada.model;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class User {
@@ -16,18 +20,24 @@ public class User {
 
 	private String nickName;
 	private String passwordHash;
+	private String biography;
 	private String email;
 	private Date birthDate;
 	private Date lastSeen;
 
 	private Boolean isAdmin;
 
-	public User(String nickName, String passwordHash, String email, Date birthDate) {
+	@OneToMany(cascade = CascadeType.ALL, mappedBy="writer")
+	private List<Post> posts;
+
+	public User(String nickName, String passwordHash, String biography, String email, Date birthDate) {
 		this.nickName = nickName;
 		this.passwordHash = passwordHash;
+		this.biography = biography;
 		this.email = email;
 		this.birthDate = birthDate;
 		this.isAdmin = true;
+		this.posts = new ArrayList<Post>();
 	}
 
 	public long getId() {
@@ -52,6 +62,14 @@ public class User {
 
 	public void setPasswordHash(String passwordHash) {
 		this.passwordHash = passwordHash;
+	}
+
+	public String getBiography() {
+		return this.biography;
+	}
+
+	public void setBiography(String biography) {
+		this.biography = biography;
 	}
 
 	public String getEmail() {
