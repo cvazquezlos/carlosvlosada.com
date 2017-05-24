@@ -8,6 +8,6 @@ import carlosvlosada.model.Comment;
 import carlosvlosada.model.Post;
 
 public interface CommentRepository extends JpaRepository<Comment, Integer> {
-	
+
 	List<Comment> findByPost(Post post);
 }

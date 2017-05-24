@@ -18,6 +18,7 @@ public class Item {
 	private String title;
 	private String shortDescription;
 	private String littleImage;
+	private String category;
 
 	private Boolean isAnImageCollection;
 	private List<String> images;
@@ -31,31 +32,34 @@ public class Item {
 	private String client;
 	private List<String> usedTechnology;
 
-	public Item(String title, String shortDescription, String littleImage, List<String> images) {
+	public Item(String title, String shortDescription, String littleImage, String category, List<String> images) {
 		this.title = title;
 		this.shortDescription = shortDescription;
 		this.littleImage = littleImage;
+		this.category = category;
 		this.isAnImageCollection = true;
 		this.images = new ArrayList<String>(images);
 		this.isAnAncleElement = false;
 		this.isADescriptiveProject = false;
 	}
 
-	public Item(String title, String shortDescription, String littleImage, String url) {
+	public Item(String title, String shortDescription, String littleImage, String category, String url) {
 		this.title = title;
 		this.shortDescription = shortDescription;
 		this.littleImage = littleImage;
+		this.category = category;
 		this.isAnAncleElement = true;
 		this.url = url;
 		this.isAnImageCollection = false;
 		this.isADescriptiveProject = false;
 	}
 
-	public Item(String title, String shortDescription, String littleImage, String largeDescription,
+	public Item(String title, String shortDescription, String littleImage, String category, String largeDescription,
 			List<String> usedTechnology) {
 		this.title = title;
 		this.shortDescription = shortDescription;
 		this.littleImage = littleImage;
+		this.category = category;
 		this.isADescriptiveProject = true;
 		this.largeDescription = largeDescription;
 		this.hasClient = false;
@@ -64,11 +68,12 @@ public class Item {
 		this.isAnAncleElement = false;
 	}
 
-	public Item(String title, String shortDescription, String littleImage, String largeDescription, String client,
-			List<String> usedTechnology) {
+	public Item(String title, String shortDescription, String littleImage, String category, String largeDescription,
+			String client, List<String> usedTechnology) {
 		this.title = title;
 		this.shortDescription = shortDescription;
 		this.littleImage = littleImage;
+		this.category = category;
 		this.isADescriptiveProject = true;
 		this.largeDescription = largeDescription;
 		this.hasClient = true;
@@ -106,6 +111,14 @@ public class Item {
 
 	public void setLittleImage(String littleImage) {
 		this.littleImage = littleImage;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
 	}
 
 	public Boolean getIsAnImageCollection() {
