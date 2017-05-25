@@ -29,7 +29,7 @@ public class Main {
 	private UserService userService;
 
 	@RequestMapping("")
-	public String home(Model model) {
+	public String index(Model model) {
 
 		List<Item> portfolio = itemService.findAll();
 		model.addAttribute("portfolio", portfolio);
@@ -37,6 +37,12 @@ public class Main {
 		model.addAttribute("blog", blogContent);
 
 		return "index";
+	}
+	
+	@RequestMapping("/{id}")
+	public String work(Model model, @PathVariable Integer id) {
+		
+		return "work";
 	}
 
 	@RequestMapping("/blog")

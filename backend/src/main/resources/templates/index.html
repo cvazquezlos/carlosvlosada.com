@@ -267,78 +267,7 @@
                     <!--FILTERS-->
                     <!-- PORTFOLIO -->
                     <div class="portfolio-items media-grid" data-layout="masonry">
-                        <div class="media-cell coding hentry">
-                            <div class="media-box">
-                                <img src="images/portfolio/05.png" alt="portfolio-post">
-                                <div class="mask"></div>
-                                <!-- lightbox - soundcloud -->
-                                <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129829419&amp;color=009966&amp;auto_play=false&amp;show_artwork=true" title="Soundcloud embed" data-lightbox-gallery="fancybox-item-04" class="lightbox iframe"></a>
-                                <!-- lightbox - soundcloud -->
-                            </div>
-                            <div class="media-cell-desc">
-                                <h3>BREMS</h3>
-                                <p class="category">un desarrollo web full stack con Spring y Angular</p>
-                            </div>
-                        </div>
-                        <div class="media-cell android hentry">
-                            <div class="media-box">
-                                <img src="images/portfolio/06.png" alt="portfolio-post">
-                                <div class="mask"></div>
-                                <!-- lightbox - gallery -->
-                                <a href="images/portfolio/lightbox-02.jpg" data-lightbox-gallery="fancybox-item-02" class="lightbox" title="Octopus is dangerous!"></a>
-                                <a href="images/portfolio/lightbox-03.jpg" data-lightbox-gallery="fancybox-item-02" class="hidden lightbox"></a>
-                                <a href="images/portfolio/lightbox-04.jpg" data-lightbox-gallery="fancybox-item-02" class="hidden lightbox" title="Dog have dreams"></a>
-                                <!-- lightbox - gallery -->
-                            </div>
-                            <div class="media-cell-desc">
-                                <h3>Space Invaders</h3>
-                                <p class="category">otro clásico implementado, esta vez, con tecnología Android</p>
-                            </div>
-                        </div>
-                        <div class="media-cell coding hentry">
-                            <div class="media-box">
-                                <img src="images/portfolio/07.png" alt="portfolio-post">
-                                <div class="mask"></div>
-                                <a href="http://themeforest.net/user/pixelwars" target="_blank"></a>
-                            </div>
-                            <div class="media-cell-desc">
-                                <h3>marinahurtado.com</h3>
-                                <p class="category">un desarrollo web usando el framework WordPress</p>
-                            </div>
-                        </div>
-                        <div class="media-cell android hentry">
-                            <div class="media-box">
-                                <img src="images/portfolio/08.png" alt="portfolio-post">
-                                <div class="mask"></div>
-                                <a href="portfolio-item-03.html" class="ajax"></a>
-                            </div>
-                            <div class="media-cell-desc">
-                                <h3>Lifez</h3>
-                                <p class="category">mi primera aplicación para dispositivos Android</p>
-                            </div>
-                        </div>
-                        <div class="media-cell design hentry">
-                            <div class="media-box">
-                                <img src="images/portfolio/09.png" alt="portfolio-post">
-                                <div class="mask"></div>
-                                <a href="portfolio-item-01.html" class="ajax"></a>
-                            </div>
-                            <div class="media-cell-desc">
-                                <h3>Snake</h3>
-                                <p class="category">un clásico implementado con Java usando Patrones de Diseño</p>
-                            </div>
-                        </div>
-                        <div class="media-cell coding hentry">
-                            <div class="media-box">
-                                <img src="images/portfolio/10.png" alt="portfolio-post">
-                                <div class="mask"></div>
-                                <a href="portfolio-item-02.html" class="ajax"></a>
-                            </div>
-                            <div class="media-cell-desc">
-                                <h3>Binary Lab</h3>
-                                <p class="category">un trabajo sobre una página web estática</p>
-                            </div>
-                        </div>
+                    	{{#portfolio}}{{>Item}}{{/portfolio}}
                     </div>
                 </div>
                 <!-- CONTENT -->
