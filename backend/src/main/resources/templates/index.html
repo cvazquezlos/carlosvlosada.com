@@ -267,7 +267,7 @@
                     <!--FILTERS-->
                     <!-- PORTFOLIO -->
                     <div class="portfolio-items media-grid" data-layout="masonry">
-                    	{{#portfolio}}{{>Item}}{{/portfolio}}
+                    	{{#portfolio}}{{>item}}{{/portfolio}}
                     </div>
                 </div>
                 <!-- CONTENT -->
@@ -361,6 +361,7 @@
                     <h2 class="section-title center"><span><i class="icon-book-open"></i>ÚLTIMOS POST DEL FORO</span></h2>
                     <!-- LATEST POSTS -->
                     <div class="latest-posts media-grid" data-layout="fitRows">
+                    	{{#blog}}{{>post}}{{/blog}}
                     </div>
                     <!-- LATEST POSTS -->
                     <p class="launch"><a class="button primary" href="blog.html">VER TODO</a></p>
