@@ -28,7 +28,7 @@ public class Main {
 	@Autowired
 	private UserService userService;
 
-	@RequestMapping("")
+	@RequestMapping("/")
 	public String index(Model model) {
 
 		List<Item> portfolio = itemService.findAll();
