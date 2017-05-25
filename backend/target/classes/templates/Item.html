@@ -2,15 +2,16 @@
 	<div class="media-box">
 		<img src="{{littleImage}}" alt="portfolio-post">
 		<div class="mask"></div>
-		{{#isAnImageCollection}}
-			{{#images}}
-            	<a href="{{images}}" data-lightbox-gallery="fancybox-item-02" class="lightbox"></a>
-            {{/images}}
+		{{#isAnImageCollection}} 
+			{{#images}} 
+			<a href="{{images}}" data-lightbox-gallery="fancybox-item-02" 
+			class="lightbox"></a>
+			{{/images}} 
 		{{/isAnImageCollection}}
-		{{#isAnAncleElement}}
-			<a href="{{url}}" target="_blank"></a>
+		{{#isAnAncleElement}} 
+			<a href="{{url}}" target="_blank"></a> 
 		{{/isAnAncleElement}}
-		{{#isADescriptiveProject}}
+		{{#isADescriptiveProject}} 
 			<a href="/{{id}}" class="ajax"></a>
 		{{/isADescriptiveProject}}
 	</div>
