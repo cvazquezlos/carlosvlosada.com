@@ -35,7 +35,7 @@ public class Post {
 	@ManyToOne
 	private User writer;
 
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "post")
+	@OneToMany
 	private List<Comment> comments;
 
 	public Post(String title, String littleImage, Date creationDate, List<Object> content, User writer) {

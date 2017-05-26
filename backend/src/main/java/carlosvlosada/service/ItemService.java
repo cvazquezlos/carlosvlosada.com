@@ -31,4 +31,8 @@ public class ItemService {
 	public Item findOne(int id) {
 		return itemRepository.findOne(id);
 	}
+
+	public void save(Item item) {
+		itemRepository.save(item);
+	}
 }

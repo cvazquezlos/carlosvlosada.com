@@ -1,13 +1,13 @@
 package carlosvlosada.model;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 @Entity
@@ -22,26 +22,27 @@ public class Comment {
 	private Boolean hasWebsite;
 	private String website;
 	private String message;
+	private Date wroteDate;
 
-	@ManyToOne
-	private Post post;
 	@OneToMany
 	private List<Comment> replies;
 
-	public Comment(String username, String email, String message) {
+	public Comment(String username, String email, String message, Date wroteDate) {
 		this.username = username;
 		this.email = email;
 		this.hasWebsite = false;
 		this.message = message;
+		this.wroteDate = wroteDate;
 		this.replies = new ArrayList<Comment>();
 	}
 
-	public Comment(String username, String email, String website, String message) {
+	public Comment(String username, String email, String website, String message, Date wroteDate) {
 		this.username = username;
 		this.email = email;
 		this.hasWebsite = true;
 		this.website = website;
 		this.message = message;
+		this.wroteDate = wroteDate;
 		this.replies = new ArrayList<Comment>();
 	}
 
@@ -93,12 +94,12 @@ public class Comment {
 		this.message = message;
 	}
 
-	public Post getPost() {
-		return post;
+	public Date getWroteDate() {
+		return wroteDate;
 	}
 
-	public void setPost(Post post) {
-		this.post = post;
+	public void setWroteDate(Date wroteDate) {
+		this.wroteDate = wroteDate;
 	}
 
 	public List<Comment> getReplies() {
