@@ -1,6 +1,8 @@
 package carlosvlosada.model;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import javax.annotation.PostConstruct;
 
@@ -24,6 +26,7 @@ public class DataExamples {
 	@Autowired
 	private UserService userService;
 
+	@SuppressWarnings("deprecation")
 	@PostConstruct
 	private void initDataBase() {
 
@@ -69,5 +72,10 @@ public class DataExamples {
 				"BREMS fue un proyecto increíble, ya que pude realizarlo con otras increíbles personas. Se trata"
 				+ "de una aplicación de gestión bibliotecaria para libros y revistas.");
 		itemService.save(i6);
+		
+		u1 = new User("cvazquezlos", "1234tBc", "Software engineer and Data Scientist.", "c.vazquezlosada@gmail.com", new Date(1995, 5, 5));
+		
+		List<Object> content = new ArrayList<Object>();
+		p1 = new Post("Primer post", "p-01.png", new Date(), content, u1);
 	}
 }
