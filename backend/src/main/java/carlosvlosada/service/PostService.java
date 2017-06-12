@@ -7,7 +7,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
-import carlosvlosada.model.Item;
 import carlosvlosada.model.Post;
 import carlosvlosada.model.User;
 import carlosvlosada.repository.PostRepository;

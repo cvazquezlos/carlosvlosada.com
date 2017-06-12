@@ -81,7 +81,9 @@ public class DataExamples {
 		List<Object> content = new ArrayList<Object>();
 		content.add("<h1>¡Bienvenidos!</h1>");
 		content.add(
-				"<p>En este blog podrás encontrar una grandísima cantidad de información relacionada con el <b>Data Science</b> (BI, Big Data, Machine Learning...) como de <b>Desarrollo Web</b>.</p>");
+				"<p>En este blog podrás encontrar una grandísima cantidad de información relacionada con el <b>Data Science"
+				+ "</b> (BI, Big Data, Machine Learning...) como de <b>Desarrollo Web</b>.</p>");
 		p1 = new Post("Primer post", "p-01.png", new Date(), content, u1);
+		postService.save(p1);
 	}
 }
