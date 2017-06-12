@@ -7,6 +7,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
+import carlosvlosada.model.Item;
 import carlosvlosada.model.Post;
 import carlosvlosada.model.User;
 import carlosvlosada.repository.PostRepository;
@@ -35,5 +36,9 @@ public class PostService {
 
 	public Post findOne(Integer id) {
 		return postRepository.findOne(id);
+	}
+
+	public void save(Post post) {
+		postRepository.save(post);
 	}
 }
