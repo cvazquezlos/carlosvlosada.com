@@ -58,9 +58,7 @@ public class Main {
 	public String post(Model model, @PathVariable Integer id) {
 
 		Post selected = postService.findOne(id);
-		List<Comment> comments = commentService.findByPost(selected);
 		model.addAttribute("post", selected);
-		model.addAttribute("comments", comments);
 
 		return "post";
 	}

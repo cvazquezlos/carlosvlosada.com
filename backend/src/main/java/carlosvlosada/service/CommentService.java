@@ -15,10 +15,6 @@ public class CommentService {
 	@Autowired
 	private CommentRepository commentRepository;
 
-	public List<Comment> findByPost(Post post) {
-		return commentRepository.findByPost(post);
-	}
-
 	public void save(Comment comment) {
 		commentRepository.save(comment);
 	}
